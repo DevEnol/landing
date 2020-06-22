@@ -1,6 +1,14 @@
 /** global element styling **/
 @import "https://fonts.googleapis.com/css?family=Montserrat:|Martel Sans:400,700";
 
+:root {
+    --green: #445016;
+    --roasted: #28220b;
+    --dark: #24221c;
+    --creamy: #ffe57b;
+    --copyright: #555555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +16,8 @@
 }
 
 body {
-  background-color: #28220b;
-  color: #ffeeaa;
+  background-color: var(--roasted);
+  color: var(--creamy);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,7 +30,7 @@ li {
 }
 
 a {
-  color: #ffeeaa;
+  color: var(--creamy);
   text-decoration: none;
 }
 
@@ -41,7 +49,7 @@ a:hover {
 .sub-title {
   text-align: center;
   padding: 60px 0 10px 0;
-  border-bottom: 2px solid #445016;
+  border-bottom: 2px solid var(--green);
   font-family: 'Martel Sans', sans-serif;
   text-transform: uppercase;
 }
@@ -60,7 +68,7 @@ a:hover {
 
 .grid {
   display: flex;
-  border-bottom: 1px solid #445016;
+  border-bottom: 1px solid var(--green);
 }
 
 header {
@@ -69,7 +77,7 @@ header {
   width: 100%;
   top: 0;
   padding: 0px 20px;
-  background-color: #445016;
+  background-color: var(--green);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -151,8 +159,8 @@ nav > ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffeeaa;
-  text-shadow: 1px 1px 5px #28220b;
+  color: var(--creamy);
+  text-shadow: 1px 1px 5px var(--roasted);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,9 +194,9 @@ nav > ul {
 
 #newsletter input[type="email"] {
   border: none;
-  border-bottom: 2px solid #ffeeaa;
-  color: #ffeeaa;
-  text-shadow: 1px 1px 5px #28220b;
+  border-bottom: 2px solid var(--creamy);
+  color: var(--creamy);
+  text-shadow: 1px 1px 5px var(--roasted);
   font-weight: bold;
   background: transparent;
   max-width: 300px;
@@ -199,15 +207,15 @@ nav > ul {
 }
 
 #newsletter input::placeholder {
-    color: #ffeeaa;
-    text-shadow: 1px 1px 5px #28220b;
+    color: var(--creamy);
+    text-shadow: 1px 1px 5px var(--roasted);
     font-weight: bold;
     opacity: 0.8;
 }
 
 #newsletter input[type="submit"] {
-  background-color: #445016;
-  color: #ffeeaa;
+  background-color: var(--green);
+  color: var(--creamy);
   font-size: 10px;
   max-width: 100px;
   width: 100%;
@@ -216,7 +224,7 @@ nav > ul {
 }
 
 #newsletter input[type="submit"]:hover {
-  background-color: #28220b;
+  background-color: var(--roasted);
   transition: background-color 1s;
 }
 
@@ -262,7 +270,7 @@ nav > ul {
   justify-content: center;
   height: 125px;
   width: 25vw;
-  color: #ffeeaa;
+  color: var(--creamy);
 }
 
 #coffee-world {
@@ -341,7 +349,7 @@ nav > ul {
 }
 
 .product > .product-name {
-  border-top: 2px solid #445016;
+  border-top: 2px solid var(--green);
   padding: 15px 0;
   width: 100%;
   text-transform: uppercase;
@@ -371,15 +379,15 @@ nav > ul {
 
 .product > button {
   width: 100px;
-  border: 2px solid #445016;
-  background-color: #445016;
-  color: #ffeeaa;
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  color: var(--creamy);
   font-weight: 400;
 }
 
 .product > button:hover {
-  background-color: #28220b;
-  border: 2px solid #445016;
+  background-color: var(--roasted);
+  border: 2px solid var(--green);
   transition: background-color 1s;
 }
 
@@ -397,7 +405,7 @@ nav > ul {
 
 footer {
   margin-top: 30px;
-  background-color: #24221c;
+  background-color: var(--dark);
   padding: 20px;
 }
 
@@ -415,5 +423,5 @@ footer > span {
   display: flex;
   justify-content: center;
   font-size: 0.9em;
-  color: #444;
+  color: var(--copyright);
 }
