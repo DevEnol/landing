@@ -201,7 +201,7 @@ nav > ul {
   background: transparent;
   max-width: 300px;
   width: 100%;
-  background-image: url("images/email.png");
+  background-image: url("../images/email.png");
   background-repeat: no-repeat;
   padding-left: 24px;
 }
