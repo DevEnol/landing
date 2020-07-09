@@ -283,6 +283,11 @@ nav > ul {
   margin-left: 10px;
 }
 
+#coffee-taste {
+  width: 100px;
+  margin-left: 10px;
+}
+
 @media (max-width: 550px) {
   #features .icon {
     display: none;
